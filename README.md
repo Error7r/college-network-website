@@ -24,6 +24,6 @@ Built as a college project to pass level 2 of Computer Science at University of 
 
 
 
-## How to Run
 
-Open `index.html` directly in your web browser. No server required.
+## Run the website
+it runs on this link: https://computernetwrok.web.app/
