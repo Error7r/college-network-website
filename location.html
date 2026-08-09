@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- GLOBAL CYBER BACKGROUND -->
+    <div id="global-cyber-bg" style="position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden;">
+        <i data-lucide="wifi" class="float-icon float-1"></i>
+        <div class="float-text float-2">&lt;/&gt;</div>
+        <i data-lucide="wifi" class="float-icon float-3"></i>
+        <div class="float-text float-4">&lt;/&gt;</div>
+        <i data-lucide="wifi" class="float-icon float-5"></i>
+        <div class="float-text float-6">&lt;/&gt;</div>
+        <i data-lucide="wifi" class="float-icon float-7"></i>
+        <div class="float-text float-8">&lt;/&gt;</div>
+    </div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+    <div class="mesh"></div>
+
+    <nav>
+        <div class="nav-brand">
+            <a href="index.html"
+                style="color: #fff; font-weight: 900; letter-spacing: 2px; text-decoration: none;">CNWD</a>
+            <i data-lucide="menu" class="mobile-menu-btn"></i>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-links">
+                <a href="leadership.html" style="margin-left: 20px;">Leadership</a>
+                <a href="lectures.html">Lectures</a>
+                <a href="ai.html" style="color: var(--accent); font-weight: 600;">Talk to Saif</a>
+                <a href="location.html">Location</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-links">
+                <button class="btn-3d nav-register-btn"
+                    style="padding: 8px 25px; font-size: 13px; font-family: Inter, sans-serif;">Register</button>
+            </div>
+        </div>
+    </nav>
+    <main id="swup" class="transition-slide">
+        <section class="hero">
+            <div class="hero-content" style="opacity: 1; transform: translateY(0);">
+                <div class="hero-label">Campus Map</div>
+                <h1 style="font-size: clamp(3rem, 6vw, 5rem);">DISCOVER<br><span>OUR SPACE</span></h1>
+                <p
+                    style="color: var(--text-dim); font-size: 1.1rem; max-width: 500px; line-height: 1.6; margin-top: 20px;">
+                    Navigate the interactive 3D map. Click anywhere on the campus to open Google Maps.
+                </p>
+            </div>
+            <div class="hero-3d" style="opacity: 1; transform: translateY(0) scale(0.8); cursor: pointer;"
+                onclick="window.open('https://maps.app.goo.gl/LUph2aVa7KddzTej9', '_blank')">
+                <canvas id="location-canvas3d" style="width: 100%; height: 100%; outline: none;"></canvas>
+            </div>
+        </section>
+
+        <footer style="padding: 100px 10%; text-align: center; border-top: 1px solid var(--border);">
+                        <style>
+                .footer-social-link {
+                    color: var(--text-dim);
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    transition: all 0.3s ease;
+                }
+                .footer-social-link:hover {
+                    color: var(--accent);
+                    transform: translateY(-3px) scale(1.05);
+                }
+                .footer-social-link svg {
+                    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                }
+                .footer-social-link:hover svg {
+                    transform: rotate(10deg) scale(1.1);
+                }
+            </style>
+            <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 20px;">
+                <a href="https://github.com/error7r" target="_blank" class="footer-social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    <span style="font-weight: 600;">error7r</span>
+                </a>
+                <a href="https://instagram.com/error.div" target="_blank" class="footer-social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16.11 7.66v.01"/><path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+                    <span style="font-weight: 600;">error.div</span>
+                </a>
+            </div>
+
+            <p style="color: var(--text-dim); font-size: 13px;">&copy; 2026 UOT COMPUTER NETWORKS & WEB DEVELOPMENT. ALL
+                RIGHTS RESERVED.</p>
+        </footer>
+    </main>
+
+    <!-- REGISTRATION MODAL -->
+    <div id="registration-modal" class="modal-overlay">
+        <div class="modal-card">
+            <h2>Join UOT Networks</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Birthday</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" class="form-control" placeholder="+964 7XX XXX XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <div class="custom-select">
+                        <div class="form-control select-trigger">
+                            <span>Select Governorate</span>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                        <input type="hidden" id="location-input" name="location" required>
+                        <div class="custom-options">
+                            <div class="custom-option" data-value="Baghdad">Baghdad</div>
+                            <div class="custom-option" data-value="Anbar">Anbar</div>
+                            <div class="custom-option" data-value="Babil">Babil</div>
+                            <div class="custom-option" data-value="Basra">Basra</div>
+                            <div class="custom-option" data-value="Dhi Qar">Dhi Qar</div>
+                            <div class="custom-option" data-value="Al-Qadisiyah">Al-Qadisiyah</div>
+                            <div class="custom-option" data-value="Diyala">Diyala</div>
+                            <div class="custom-option" data-value="Duhok">Duhok</div>
+                            <div class="custom-option" data-value="Erbil">Erbil</div>
+                            <div class="custom-option" data-value="Karbala">Karbala</div>
+                            <div class="custom-option" data-value="Kirkuk">Kirkuk</div>
+                            <div class="custom-option" data-value="Maysan">Maysan</div>
+                            <div class="custom-option" data-value="Al-Muthanna">Al-Muthanna</div>
+                            <div class="custom-option" data-value="Najaf">Najaf</div>
+                            <div class="custom-option" data-value="Nineveh">Nineveh</div>
+                            <div class="custom-option" data-value="Saladin">Saladin</div>
+                            <div class="custom-option" data-value="Sulaymaniyah">Sulaymaniyah</div>
+                            <div class="custom-option" data-value="Wasit">Wasit</div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-3d btn-3d-large" style="margin-top: 20px;">Complete
+                    Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
