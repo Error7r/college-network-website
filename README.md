@@ -2,8 +2,6 @@
 
 A multi-page static website explaining computer network concepts, built as a college assignment.
 
-🎥 Demo video: [placeholder — add YouTube link here]
-
 ## Tech Stack
 
 - HTML
