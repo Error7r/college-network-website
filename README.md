@@ -21,8 +21,9 @@ A multi-page static website explaining computer network concepts, built as a col
 Built as a college project to pass level 2 of Computer Science at University of Technology (UOT).
 
 ## Screenshots
+<img width="1897" height="937" alt="image" src="https://github.com/user-attachments/assets/faaa3744-76fe-490b-8449-df7eba275139" />
 
-*(screenshots coming — add these)*
+
 
 ## How to Run
 
